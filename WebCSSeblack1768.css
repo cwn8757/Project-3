@@ -1,0 +1,399 @@
+/* 
+*************************************
+*
+Programmer: Elijah Black
+*
+Class ID: eblack1768
+*
+Lab#4: 
+*
+CIS 3900: Business Web Architecture
+*
+Fall 2016
+*
+Due date: 12/1/16
+*
+Date completed: 12/1/16 
+*************************************
+*this is the WebCSS which formats both my pages and the form.
+*/
+/* 
+the theme of this css is the use of a navy blue and greys that mesh well. I am looking to utilize an this color scheme
+and to touch more on the use of borders that we learned and margins which i used to shrink my footer so it was much 
+smaller and not as in your face.  
+*/
+/* This line imports my font family from the google developers */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+header, nav, main, footer, aside { display: block; }
+/* This section formats my nav bar with rounded corners, and my background color*/
+nav { 
+border-radius: 25px;
+width: 97%;
+background-color: #1a4982;
+padding: 0 1.5% 0 1.5%;
+text-shadow: 3px 3px 3px #999;
+}
+/* This section formats my nav bar unorderlist items */
+nav ul li {
+display: inline-block;
+padding: 15px 1.5% 15px 1.5% ;
+}
+/* This sections formats my nav bar unorderlist a items for each specfic link with text color and size */
+nav ul li a {
+text-decoration: none;
+color: #ffffff;
+font-size: 1.2em;
+}
+/* This section formats my navbar items with my hover color */
+nav a { text-decoration: none; }
+nav a:link { color: white; }
+nav a:visited{ color:white; }
+nav a:hover { color: #1a4982; }
+/* This section formats my body text and color*/
+body { 
+font-family: 'Open Sans', sans-serif;
+color: #999;
+}
+/* this container holds the structuring for my entire page */
+#pagewrap {
+padding: 5px;
+width: 1100px;
+margin: 20px auto;
+}
+/* This section formats my image in my middle container to float right and includes padding around it*/
+section img { float: right;
+padding: 20px;
+transform: rotateZ(16deg);
+}
+/* This section formats my images in my gallery in the right column to make them expand when the column 
+grows when you shrink the window */
+aside img{
+text-align: center;
+padding: 10px 40px 10px 5px;
+width: 90%;
+height: auto;
+}
+/* This section formats my header with my logo and color as well as font size, color and padding. */
+header {
+background-image: url(images/header.jpg);
+background-repeat: no-repeat;
+background-color: #1a4982;
+height: 110px;
+font-family: Georgia, "Times New Roman", serif;
+font-size: 1.5em;
+padding-left: 220px;
+padding-top: 20px;
+text-shadow: 3px 3px 3px #999;
+margin-bottom: 0;
+}
+/* This section centers my headers in the 3 columns*/
+h2{
+text-align: center;
+}
+/* This section formats my left column floating it to the left and its background and text color. */
+#leftCol {
+width: 150px;
+float: left;
+padding: 5px 15px;
+color: #1a4982;
+background-color: #F0EFEF;
+}
+/* This section formats the back container of the middle section that is the blue box around the actual container the text is in. */
+#middle {
+width: 694px; /* Account for margins + border values */
+float: left;
+padding: 5px 15px;
+margin: 0px 5px 5px 5px;
+background-color: #1a4982;
+border-radius: 10px;
+}
+/* This section holds all my content in the middle section it is floated left outside of the left column and has a white background*/
+#middleInside {
+float: left;
+padding: 10px 10px;
+margin: 10px 5px 10px 5px;
+background-color: #FFF;
+color:  #1a4982;
+}
+/* This section formats my right column width  and colors. */
+aside{
+width: 150px;
+padding: 5px 15px;
+float: left;
+color: #1a4982;
+background-color: #F0EFEF;
+}
+/* This section formats my footer padding, fontsize and alignment. */
+footer {
+clear: both;
+padding: 0 15px;
+font-size:70%;
+text-align: center;
+}
+/*This section formats my color input tag with width, text size, color and a border */
+#color {
+width: 18em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 12px;
+resize: none;
+}
+/*This section formats my email input tag with width,a border,  and color */
+#email{   
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;
+}
+/*This section formats my first name input tag with width, text size, color and a border */
+#firstName{    
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my last name input tag with width, text size, color and a border */
+#lastName{    
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my telephone number input tag with width, text size, color and a border */
+#tel{    
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my date input tag with width, text size, color and a border */
+#date{    
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my number input tag with width, text size, color and a border */
+#number{    
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my rank input tag with width, text size, color and a border */
+#rank{    
+width: 16em;
+margin-right: 0px;
+margin-left: 0px;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my rank input tag with width, text size, color and a border */
+#range{    
+width: 16em;
+margin-right: 0px;
+margin-left: 0px;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my URL input tag with width, text size, color and a border */  
+#url{   
+width: 16em;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;}
+/*This section formats my p tag with my desired font size*/    
+p{font-size: 1.1em;}
+/*This section formats field set section with a blue border and grey background*/ 
+fieldset { 
+border:2px solid #1a4982; 
+padding: 1em;
+font:80%/1 sans-serif;
+background-color: #eee;
+}
+/*This section formats my submit input tag with margins to center it, padding, and bold text */
+#submit {
+margin: 10px 0px 0px 315px;
+width:25%;
+padding-top:0.2em;
+font-weight:bold;
+font-size: 1.2em;
+}
+/*This section formats my label tag with padding, text align, bold text, and width */  
+label {
+margin: 1.4em 1.4em 1.4em .2em;
+width:25%;
+margin-right:0.5em;
+padding-top:0.2em;
+text-align:right;
+font-weight:bold;
+}
+/*This section formats my legend tag with padding, text color, font size, and margins and a border */  
+legend {
+padding: 1.2em 0.5em;
+border:1px solid #1a4982;
+color:#1a4982;
+font-size:100%;
+text-align: center;
+margin: 6px 330px;
+background-color: #ddd;
+}
+/* this section sets the margins for my gallery div container*/
+#gallery{margin: 30px 0px;} 
+/*This section sets the margins on my canvas element to move it to the center of the page */
+canvas{margin-left: 333px;margin-top: 13px;}
+/* This section sets the margins on my audio element to move it to the center as well.*/
+audio{margin-left: 275px;
+margin-top: 7px;}
+/*This section sets the size of my images as well as blurring them a bit with opacity while they are thumbnails */
+#gallery a img{
+margin: 2px;
+display: block;
+width: 100%;
+height: 100%;
+-webkit-transition-property: width, height; 
+-webkit-transition-duration: 300ms; /* the speed it is necessary to return an image to its initial look*/
+-moz-transition-property: width, height;
+-moz-transition-duration: 300ms;
+-o-transition-property: width, height;
+-o-transition-duration: 300ms;
+position: absolute;
+opacity: 0.2; /* add opacity*/
+cursor: pointer;
+}
+/* This section uses the pseudoclass: focus to create the appearance of the image opening and enlarging. and also having a slight 16 degree Z transform.*/
+#gallery a:focus img{
+width: 250%; /* increase the image to this size */
+height: 250%;
+position: absolute;
+opacity: 1; /* transparency is not needed */
+z-index: 1; /* for a photo to enlarge over all images */
+-moz-box-shadow: 0 0 15px 2px #000;
+-webkit-box-shadow: 0 0 15px 2px #000;
+box-shadow: 0 0 15px 2px #000; /* this shadow makes the photos pop a bit more when enlarged */
+-webkit-transition-property: width, height; /* decreases the image */
+-webkit-transition-duration: 2s; /* with what speed it is necessary to increase an image */
+-webkit-transition-delay: 0.3s; /* delay before enlarging a photo */
+-moz-transition-property: width, height;
+-moz-transition-duration: 2s;
+-moz-transition-delay: 0.3s;
+-o-transition-property:width, height;
+-o-transition-duration: 2s;
+-o-transition-delay: 0.3s;
+cursor: default;
+transform: rotateZ(-16deg);/* tilts my photos to the right*/
+}
+/* This section formats the size and position of the images in my gallery*/
+#gallery a {
+display: inline-block;
+width: 200px;
+height: 141px;
+position: relative;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+/************************************************************************************
+*************************************************************************************/
+/* These bottom 3 sections format my page for different screen sizes/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+#pagewrap {
+width: 94%;
+}
+#leftCol {
+width: 21%;
+padding: 1% 4%;
+}
+#middle {
+width: 61%;
+padding: 1% 4%;
+margin: 0px 0px 5px 5px;
+float: right;
+}
+fieldset{
+width: 60%;
+padding: 1% 4%;
+margin: 0px 0px 5px 5px;
+float: right;
+}
+#sidebar {
+clear: both;
+padding: 1% 4%;
+width: auto;
+float: none;
+}
+#aside{
+display: inline;}
+header, footer {
+padding: 1% 4%;
+}
+}
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+nav{
+display: block;
+width: auto;
+float: none;}
+#leftCol {
+width: auto;
+float: none;
+}
+#middle {
+width: auto;
+float: none;
+margin-left: 0px;
+}
+#sidebar {
+width: auto;
+float: none;
+}
+#aside{
+display: inline;}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+nav{
+width: auto;
+float: none;
+display: block;}
+header {
+height: auto;
+}
+h1 {
+font-size: 2em;
+}
+#sidebar {
+display: none;
+}
+#gallery{display: none;}
+table{
+display: none;}
+}
+#leftCol {
+background: #f8f8f8;
+}
+#sidebar {
+background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+margin-bottom: 5px;
+}
+#pagewrap, header, #leftCol, #middle, #sidebar {
+border: solid 1px #ccc;
+}
+

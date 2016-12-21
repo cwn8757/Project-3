@@ -1,0 +1,68 @@
+/* 
+*************************************
+*
+Programmer: Elijah Black
+*
+Class ID: eblack1768
+*
+Lab#4: 
+*
+CIS 3900: Business Web Architecture
+*
+Fall 2016
+*
+Due date: 12/1/16
+*
+Date completed: 12/1/16 
+*************************************
+*this CSS page reformats my site when pages are printed
+*/
+
+/* removes my page borders for printing */
+#pagewrap, header, #leftCol, #middle, #sidebar {
+border: none;
+}
+/* removes these sections for printing */
+table,#leftCol,aside,audio,video,canvas,#gallery{display: none;}
+/* Schanges the display option for these sections to block */
+#middleInside,header, nav, footer { display: block; }
+/* changes my font, background and text colors for printing */
+#container { background-color: #fff;
+             color: #000;
+             font-family: Verdana, Arial, sans-serif; }
+
+header {  color: #000;
+		background-color: #ffffff;
+		padding: 0 0px; }		 
+/* sets my body background to white*/
+body { 
+       background-color: #ffffff; }
+/* removes my heade */       
+header a { display: none; }
+/*moves my h2 tags to the left */
+h2{text-align: left;}
+
+
+/* reformats my footer for printing */
+footer { font-size: .70em;
+         text-align: left;
+         color: #000;
+         background-color: #ffffff;
+         padding-top: 10px;
+         clear: both; }	 
+
+/* reformats h1 text align and size*/
+h1 { 
+     font-size: 24pt;
+     text-align: left;
+     text-shadow: 2px 2px 2px #000; }	 
+/* changing the text color in these sections to black and background color to white*/
+#middleInside, h2 { color: #000;
+                   background-color: #fff; }
+
+nav ul li a{font-size: 10pt;}
+/* Showing the hyperlinks in nav bar */
+nav ul li a:after { content: " (" attr(href) ") ";
+		     font-size: 8pt;
+			 color: #000; }
+
